@@ -12,8 +12,27 @@ body {
 
 .container {
   width: 1200px;
+
+  padding: 0 15px;
   justify-content: center;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 .list-navi {
   display: flex;
@@ -22,10 +41,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-right: 371px;
-  padding: 0px;
 }
 .list-contact {
   display: flex;
@@ -34,9 +49,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  padding: 0px;
+  margin-left: auto;
 }
 
 .link {
@@ -60,17 +73,16 @@ body {
 }
 
 .page-header {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #ececec;
-
   height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-border {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-
   margin-right: 93px;
 }
 
@@ -111,7 +123,6 @@ body {
 
 .page-description {
   background-color: var(--footer-color);
-  width: 1200px;
   height: 600px;
   text-align: center;
 }
@@ -151,24 +162,20 @@ h1 {
 
 .page-footer {
   background-color: var(--footer-color);
-  width: 1200px;
-  height: 252px;
-  margin: 0;
+
+  padding: 60px 0;
 }
 
 .list-working {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin-top: 94px;
 }
 
 .list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin: 0px;
-  padding: 94px 0px;
 }
 
 .style-paragraph {
@@ -176,7 +183,7 @@ h1 {
   font-weight: 400;
   line-height: 24px;
   color: var(--paragraph-color);
-  margin: 0;
+
   padding-top: 10px;
 }
 
@@ -185,7 +192,6 @@ h1 {
   font-weight: 700;
   line-height: 1.14;
   color: var(--font-color);
-  margin: 0;
 }
 
 .image-description {
@@ -194,22 +200,16 @@ h1 {
   line-height: 0.85;
   color: #212121;
   text-align: center;
-  margin: 0;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .list-image {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  margin: 0px;
-  padding-top: 50px;
-  padding-bottom: 94px;
-  padding-left: 0;
 }
 
 .style-jobs {
   background: var(--background-color-light-gray);
-  height: 648px;
 }
 
 .name {
@@ -244,9 +244,8 @@ h1 {
   font-style: normal;
   line-height: 1.71;
   color: #ffffff;
-
-  padding-left: 15px;
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .style-contact {
@@ -254,23 +253,24 @@ h1 {
   font-weight: 400;
   line-height: 1.71;
   list-style-type: none;
-  margin: 0;
-  padding-left: 15px;
   list-style-position: outside;
+}
+
+.line-distance {
+  margin-bottom: 9px;
 }
 
 .link-footer {
   color: #ffffff99;
   text-decoration: none;
-  padding-bottom: 9px;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--logo-kolor);
 }
 
 .style-logo-footer {
-  border: 1px solid red;
-  width: 91px;
-  padding-left: 15px;
-  padding-top: 60px;
-  padding-bottom: 20px;
   text-decoration: none;
 }
 
@@ -281,7 +281,7 @@ h1 {
   font-weight: 700;
   color: var(--font-color);
   line-height: 2;
-  margin: 0;
+
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 4px;
@@ -292,28 +292,18 @@ h1 {
   font-weight: 400;
   line-height: 1.875;
   color: var(--paragraph-color);
-  margin: 0;
+
   padding-left: 24px;
   padding-bottom: 20px;
 }
 
-.section {
+.portfolio {
   display: flex;
-
   flex-wrap: wrap;
-  padding: 0 15px 0 15px;
   list-style: none;
   margin-top: 50px;
-  margin-bottom: 94px;
-}
-
-.item {
-  flex-basis: calc((100%-2 * 30px) / 3);
-  /* gap: 30px; */
-}
-
-.section li:nth-child(3n) {
-  border: 2px solid red;
+  gap: 30px;
+  /* flex-basis: calc((100%- 60px) / 3); */
 }
 
 .button-portfolio {
@@ -321,9 +311,6 @@ h1 {
   justify-content: center;
   list-style: none;
   gap: 8px;
-  margin-top: 94px;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 .button-portfolio-item {
