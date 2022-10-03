@@ -303,7 +303,7 @@ h1 {
   list-style: none;
   margin-top: 50px;
   gap: 30px;
-  /* flex-basis: calc((100%- 60px) / 3); */
+  flex-basis: calc((100%- 60px) / 3);
 }
 
 .button-portfolio {
@@ -335,4 +335,13 @@ h1 {
 .button-portfolio .button-portfolio-item:focus {
   background-color: var(--logo-kolor);
   color: #ffffff;
+}
+
+.border-portfolio {
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+}
+
+.space {
+  display: block;
 }
